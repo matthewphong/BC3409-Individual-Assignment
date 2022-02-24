@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1>Predict Default</h1>
+        <form action="http://127.0.0.1:8473/" method="post">
+            <p>Please enter your Income (-3 to 3)</p>
+            <p><input type="number" step="0.01" name="income"></p>
+            <p>Please enter your Age (-3 to 3)</p>
+            <p><input type="number" step="0.01" name="age"></p>
+            <p>Please entert your Loan Amount (-3 to 3)</p>
+            <p><input type="number" step="0.01" name="loan"></p>
+            <p><input type="submit" value="Enter"></p>
+        </form>
+        <p>{{lr_result}}</p>
+        <p>{{dt_result}}</p>
+        <p>{{rf_result}}</p>
+        <p>{{xg_result}}</p>
+        <p>{{nn_result}}</p>
+    </body>
+</html>
